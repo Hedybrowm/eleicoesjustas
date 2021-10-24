@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import Login from './components/pages/login/Login'
+import NavBar from './components/layout/navbar/NavBar'
+import Register from './components/pages/register/Register'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Bem vindo ao site Eleições Justas! Ainda em construção...
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Router>
+      <Route exact path = "/">
+        <header>
+          <Login />
+        </header>
+      </Route>
+      <Route exact path = "/register">
+          <Register />
+      </Route>
+      <Switch>
+        <Route exact path = "/navbar">
+            <NavBar />
+        </Route>
+      </Switch>
+    </Router>
+    )
 }
 
 export default App;
