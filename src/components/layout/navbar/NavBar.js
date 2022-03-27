@@ -4,6 +4,11 @@ function NavBAr(){
     return(
         <Router>
             <nav>
+                <img src='' alt=''>Logo</img>
+                <h1>Title</h1>
+                <input></input>
+                <button>Pesquisar</button>
+                <a href=''>Login</a>
                 <ul>
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/votosnacionais">Votos Nacionais</Link></li>

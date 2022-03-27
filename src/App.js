@@ -11,11 +11,11 @@ function App() {
           <Login />
         </header>
       </Route>
-      <Route exact path = "/register">
+      <Route path = "/register">
           <Register />
       </Route>
       <Switch>
-        <Route exact path = "/navbar">
+        <Route path = "/navbar">
             <NavBar />
         </Route>
       </Switch>
