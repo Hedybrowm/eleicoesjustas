@@ -1,6 +1,10 @@
+//import React, { useState } from 'react';
+import React from 'react';
+import {Link} from 'react-router-dom';
 import './App.css'
 
-function Login() {
+export default function Login() {
+    const url = '';
   return (
     <header className='container'>
         <div className='row'>
@@ -22,13 +26,14 @@ function Login() {
             <div className = "col-md-6 col-sm-12">
                 <form className = "formLogin mx-5">
                     <h3 className="text-center">Acesse a sua conta</h3>
-                    <label for="name" className="form-label">Nome do utilizador</label>
+                    <br/>
+                    <label htmlFor="name" className="form-label">Nome do utilizador</label>
                     <input type = "email" id = "email" className = "email mb-4" placeholder = "escreve aqui teu email"></input>
-                    <label for="password" className="form-label">Password</label>
+                    <label htmlFor="password" className="form-label">Password</label>
                     <input type = "password" id = "senha" className = "senha mb-4" placeholder = "escreve aqui tua senha"></input>
                     <input type = "button" id = "btn_login" className = "btn_login mb-3" value = "Entrar"></input>
                     <div className='text-center'>
-                        <a className="passRecovery" href="#" target="_blank" rel="noopener noreferrer">Esqueceu a senha?</a>
+                        <Link className="passRecovery" to={url} target="_blank" rel="noopener noreferrer">Esqueceu a senha?</Link>
                     </div>
                 </form>
             </div>
@@ -36,5 +41,3 @@ function Login() {
     </header>
   );
 }
-
-export default Login;

@@ -1,0 +1,11 @@
+.title-statistic {
+    background-color: rgb(12, 227, 235);
+}
+
+.statistic {
+    background-color: rgb(228, 228, 228, 0.4);
+}
+
+#statistic-bar {
+    border: 1px solid rgb(226, 204, 204);
+}

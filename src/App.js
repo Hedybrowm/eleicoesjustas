@@ -1,26 +1,23 @@
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import Login from './components/pages/login/Login'
-import NavBar from './components/layout/navbar/NavBar'
+//import NavBar from './components/layout/header/navbar/NavBar'
 import Register from './components/pages/register/Register'
+import PaginaInicial from './components/pages/PaginaInicial'
 
-function App() {
+export default function App() {
   return (
     <Router>
       <Route exact path = "/">
-        <header>
           <Login />
-        </header>
       </Route>
       <Route path = "/register">
           <Register />
       </Route>
       <Switch>
-        <Route path = "/navbar">
-            <NavBar />
+        <Route path = "/home">
+            <PaginaInicial />
         </Route>
       </Switch>
     </Router>
     )
 }
-
-export default App;

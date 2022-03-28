@@ -1,7 +1,7 @@
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import NavBar from '../layout/navbar/NavBar'
 
-function VotosNacionais(){
+export default function VotosNacionais(){
     return
         (
         <Router>
@@ -10,5 +10,3 @@ function VotosNacionais(){
         </Router>
         )
 }
-
-export default VotosNacionais;
