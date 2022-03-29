@@ -1,0 +1,96 @@
+/*
+    Style of top header
+*/
+#header-top {
+    background-color: rgb(20, 202, 222);
+    color: aliceblue;
+    height: 70px;
+    padding: 0.7rem 0.5rem;
+}
+
+#logo > * {
+    display: inline;
+    float: left;
+    margin: 0% 6.2%;
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+#logo > h3 {
+    margin-top: 10px;
+}
+
+#logo-img {
+    margin-top: -1%;
+    font-size: 3.4rem;
+    font-weight: lighter;
+}
+
+#searchInput {
+    border: 1px solid rgba(171, 171, 171, 0.39);
+    border-radius: 6px;
+    font-size: 16px;
+    width: 60%;
+    height: 35px;
+    margin-right: 30px;
+    padding: 0px 19px;
+}
+
+#searchInput:hover {
+    border: 1px solid rgba(0, 0, 0, 0.39);
+}
+
+#searchBtn {
+    background-color: #2cb4c4;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    height: 35px;
+    padding: 1px 14px;
+}
+
+#searchBtn:hover {
+    background-color: #009eb0;
+    transition-duration: 0.7s;
+    transition-delay: 0.1s;
+}
+
+#login > a {
+    color: aliceblue;
+    font-size: 24px;
+    font-weight: bolder;
+    float: right;
+    margin-right: 5rem;
+}
+
+/*
+    Style of menu
+*/
+
+#div-menu {
+    border: 1px rgb(243, 230, 230) solid;
+    border-radius: 10px;
+    margin-top: 0.1rem;
+    height: 40px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+    float: left;
+    margin: -0.1rem 0.3rem;
+    padding: 0.5rem 0.9rem;
+    cursor: pointer;
+    border-radius: 1px;
+}
+
+li:hover {
+    background-color: rgb(20, 202, 222);
+    margin-top: -3px;
+    margin-bottom: 1px;
+}

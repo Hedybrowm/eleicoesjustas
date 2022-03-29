@@ -1,8 +1,8 @@
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import Login from './components/pages/login/Login'
-//import NavBar from './components/layout/header/navbar/NavBar'
+import StatBar from './components/layout/header/navbar/NavBar'
 import Register from './components/pages/register/Register'
-import PaginaInicial from './components/pages/PaginaInicial'
+//import PaginaInicial from './components/pages/PaginaInicial'
 
 export default function App() {
   return (
@@ -15,7 +15,7 @@ export default function App() {
       </Route>
       <Switch>
         <Route path = "/home">
-            <PaginaInicial />
+            <StatBar />
         </Route>
       </Switch>
     </Router>
