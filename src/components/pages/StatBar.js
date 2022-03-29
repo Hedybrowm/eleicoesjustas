@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import './PaginaInicial.css';
 
 export default function StatBar(){
+        
     return(
         <>
             <div className='row mx-4 my-3 p-2' id='stat-bar'>

@@ -1,5 +1,5 @@
 import React from 'react';
-//import {Link} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import { FaBalanceScale } from 'react-icons/fa';
 import './NavBar.css';
 import StatBar from '../../../pages/StatBar';
@@ -28,7 +28,7 @@ export default function NavBar(){
                         </form>
                     </div>
                     <div id="login" className='col-2 align-self-center right'>
-                        <a href='#'>{login}</a>
+                        <Link to='/'>{login}</Link>
                     </div>
                 </div>
             </div>
