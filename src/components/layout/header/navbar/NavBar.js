@@ -28,7 +28,7 @@ export default function NavBar(){
                         </form>
                     </div>
                     <div id="login" className='col-2 align-self-center right'>
-                        <Link to='/'>{login}</Link>
+                        <Link to='/login'>{login}</Link>
                     </div>
                 </div>
             </div>
