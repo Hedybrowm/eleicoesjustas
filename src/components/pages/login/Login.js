@@ -12,10 +12,10 @@ export default function Login() {
         </div>
         <div className='row'>
             <div className = "col-md-6 col-sm-12 align-self-center">
-                <div className='row text-center mt-5'>
+                <div className='row text-center m-0.5'>
                     <h1 clasName = "titulo">Eleições Seguras</h1>
                 </div>
-                <div className = "row">
+                <div className = "row text">
                     <p className='paragrafo text-center'>
                         Contribuir para que as eleições em Angola sejam justas, transparentes e 
                         com um elevado grau de participação, não é só um acto de cidadania e patriotismo, 
@@ -24,7 +24,7 @@ export default function Login() {
                 </div>
             </div>
             <div className = "col-md-6 col-sm-12">
-                <form className = "formLogin mx-5">
+                <form className = "formLogin m-2">
                     <h3 className="text-center">Acesse a sua conta</h3>
                     <br/>
                     <label htmlFor="name" className="form-label">Nome do utilizador</label>
