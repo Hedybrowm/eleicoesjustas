@@ -316,7 +316,9 @@ export default class Template extends React.Component{
 	render (){ 
 		return (
 			<div>
-				O layout do design fica aqui!
+				<p>CABEÇALHO</p>
+				<div>{this.props.component}</div>
+				<p>RODAPÉ</p>
 			</div>
 		);
 	}
