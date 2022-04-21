@@ -153,6 +153,150 @@ const languages = { //Begin Json to map each DB table with values for views. All
 			}, //Fim das labels para os campos deste módulo
 		}, //Fim da chave que contém as strings associadas ao módulo Votos
 	}, //Fim português de Portugal
+	"pt-pt": { //Início português do Brasil
+		"General": { //Início da chave que contém as strings genéricas para toda aplicação
+			"mon": "Segunda-Feira", //Texto para Segunda-Feira
+			"tue": "Terça-Feira", //Texto para Terça-Feira"
+			"wed": "Quarta-Feira", //Texto para Quarta-Feira
+			"thu": "Quinta-Feira", //Texto para Quinta-Feira
+			"fri": "Sexta-Feira", //Texto para Sexta-Feira
+			"sat": "Sábado", //Texto para Sábado
+			"sun": "Domingo", //Texto para Domingo
+			"jan": "Janeiro", //Texto para Janeiro
+			"feb": "Fevereiro", //Texto para Fevereiro
+			"mar": "Março", //Texto para Março
+			"apr": "Abril", //Texto para Abril
+			"may": "Maio", //Texto para Maio
+			"jun": "Junho", //Texto para Junho
+			"jul": "Julho", //Texto para Julho
+			"aug": "Agosto", //Texto para Agosto
+			"sep": "Setembro", //Texto para Setembro
+			"oct": "Outubro", //Texto para Outubro
+			"nov": "Novembro", //Texto para Novembro
+			"dec": "Dezembro", //Texto para Dezembro
+			"signInTitle": "Iniciar Sessão",  //Label para iniciar sessão
+			"userEmail": "Utilizador ou email", //Placeholder para iniciar sessão
+			"userEmailPlaceholder": "Nome de utilizador ou email", //Label para nome de utilizador ou email
+			"password": "Palavra-passe", //Label para palavra-passe
+			"newPassword": "Nova Palavra-passe", //Label para nova palavra-passe
+			"passwordPlaceholder": "sua palavra-passe", //Placeholder para palavra-passe
+			"password2": "Confirmar Palavra-passe", //Label para palavra-passe
+			"passwordPlaceholder2": "confirmação da palavra-passe", //Placeholder para palavra-passe
+			"confirmationCode": "Código de confirmação", //Código de confirmação enviado ao email ou telemóvel
+			"keepConnected": "Permanecer ligado", //Texto associado a uma checkbox para manter a sessão ativa
+			"signInButton": "Iniciar Sessão",  //Botão iniciar sessão
+			"lostData": "Perdeu os seus dados de acesso? ", //Texto associado ao link para recuperar a palavra-passe
+			"clickHere": "Clique aqui!", //Texto para o link que leva a uma hiperligação ou rota específica
+			"notRegistered": "Não tem uma conta? ", //Texto associado ao link para criar nova conta
+			"signUp": "Criar conta", //Link para criar uma nova conta
+			"needHelp": "Precisa de ajuda? Contacte os nossos serviços de ", //Texto associado ao link para ajuda
+			"termsOfUse": "Termos de utilização", //Texto para o link de acesso aos termos de utilização
+			"copyright": "Desenvolvido por", //Texto de direitos autorais
+			"contact": "Apoio ao cliente", //Texto de contacto
+			"painelPrincipal": "Painel Principal",  //Texto do Menu Painel principal. TODO: Talvez no futuro os menus poderão estar todos dentro de uma chave "menus" para serem dinâmicos
+			"utilitarios": "Utilitários", //Texto do Menu Utilitários. 
+			"configuracoes": "Configurações", //Texto do Menu Configurações. 
+			"alertas": "Alertas", //Texto do Menu Alertas. 
+			"helpHint": "Manual do Utilizador", //Hint do Modal de Ajuda. TODO: Para ser utilizado no futuro
+			"userHint": "Página do Utilizador", //Hint do Modal da Página do Utilizador. TODO: Para ser utilizado no futuro
+			"logoutHint": "Terminar sessão", //Hint para o botão logout. TODO: Para ser utilizado no futuro
+			"help": "Manual do Utilizador", //Título do Modal de Ajuda. 
+			"user": "Página do Utilizador", //Título do Modal da Página do Utilizador.
+			"logoutMessage": "Deseja realmente sair?", //Mensagem de confirmação de logout
+			"yesButton": "Sim", //Texto do botão aceitar
+			"noButton": "Não", //Texto do botão negar
+			"backButton": "Voltar", //Texto do botão voltar
+			"searchBox": "Pesquisar", //hint da caixa (ícone) de pesquisa
+			"search": "Pesquisa", //Placeholder da caixa de pesquisa
+			"linesNumber": "linhas", //Texto de rodapé indicativo do número de linhas na tabela genérica
+			"firstPage": "Primeira Página", //hint de rodapé para a seta Primeira Página da tabela genérica
+			"nextPage": "Próxima Página", //hint de rodapé para a seta Próxima Página da tabela genérica
+			"previousPage": "Página Anterior", //hint de rodapé para a seta Página Anterior da tabela genérica
+			"lastPage": "Última Página", //hint de rodapé para a seta Última Página da tabela genérica
+			"serverOffline": "Erro no servidor. Verifique a sua conexão ou contacte o administrador!", //Texto de excessão associada ao servidor (ex: 500)
+			"inputError": "Preencha o campo corretamente!", //Texto de erro para campo mal preenchido
+			"emptyInputError": "Campo obrigatório", //Texto de erro para campo obrigatório não preenchido. TODO: Use it in the future
+			"validationError": "Corrija os campos mal preenchidos!", //Mensagem para erro de validação em algum formulário
+			"passwordRecovery": "Recuperação de Password", //Título de recuperação
+			"passwordRecoveryButton": "Recuperar Password", //Botão de recuperação
+			"sendConfirmationCodeButton": "Enviar código de recuperação", //Botão enviuar código de recuperação
+			"recoveryCodeMessage": "Um cógigo de confirmação foi enviado ao seu email. Utilize-o  no formulário abaixo", //Mensagem após enviar código
+			"passwordRecoveryMessage": "A sua palavra-passe foi atualizada com sucesso!", //Mensagem após atualizar pass
+			"signUpMessage": "Conta criada com sucesso!", //Menssagem de criação de conta
+			"signUpError": "Ocorreu um erro ao criar a conta. Verifique os seus dados e a conexão ao servidor", //Mensagem de erro ao criar conta
+			"passwordRecoveryError": "Os dados fornecidos são inválidos!", //Erro ao tentar recuperar password
+			"recoveryCodeError": "O código de verificação não pode ser enviado, verifica a sua conexão e os dados fornecidos", //Erro ao enviar o código
+			"missmatchPasswordError": "As passwords devem coincidir",  //Erro de confirmação da palavra passe
+			"weakPasswordError": "Palavra passe fraca. Utilize letras, números e caracteres especiais", //Erro de palavra passe fraca
+			"preview": "Previsualização",
+			"notAllowed": "Não tem permissões para aceder essa área restrita!",
+			"print": "Imprimir",
+		}, //Fim da chave que contém as strings genéricas para toda aplicação
+		"Votos": { //Início da chave que contém as strings associadas ao módulo Votos
+			"name": "Votos", //Nome do título da página
+			"mainTabs": ["Votos Tab 1", "Votos Tab 2", "Votos Tab 3"], //Tabs para os diferentes tipos do módulo
+			"modalTabs": ["Campos principais", "Campos auxiliares", "Outros"], //Tabs para os diferentes separadores no fomulário do módulo
+			"modalTabsTitles": ["Campos principais", "Campos auxiliares", "Outros"], //Títulos para o conteúdo de cada tab de formulário
+			"saveButtonHint": "Gravar Voto", //Hint do botão guardar
+			"editButtonHint": "Editar Voto", //Hint do botão editar
+			"deleteButtonHint": "Eliminar Voto", //Hint do botão eliminar
+			"lockButtonHint": "Voto já assinada ou em edição", //Hint do botão lock (cadeado de bloqueio sobre registos não editáveis no momento)
+			"lockButtonMessage": "Não poderá alterar dados a serem alterados por outra pessoa ou documentos já assinados!", //Texto de mensagem ao clicar no botão lock
+			"saveButton": "Guardar Voto", //Texto do botão guardar
+			"editButton": "Editar Voto", //Texto do botão editar
+			"deleteButton": "Eliminar Voto", //Texto do botão eliminar
+			"titleSave": "Novo Voto", //Título do modal de inserção e do botão para abrir tal modal
+			"titleEdit": "Editar Voto", //Título do modal de edição
+			"titleDelete": "Eliminar Voto?", //Título do modal de eliminação
+			"messageDelete": "Pretende eliminar a seguinte Voto?", //Mensagem de confirmação do modal de eliminação
+			"successSave": "Dados do Voto gravados com sucesso!", //Mensagem do POST bem sucedido
+			"successEdit": "Dados do Voto atualizados com sucesso!", //Mensagem do PUT bem sucedido
+			"successDelete": "Voto eliminada com sucesso!", //Mensagem do DELETE bem sucedido
+			"errorSaveClient": "Ocorreu um erro ao gravar o Voto, verifique a sua conexão com servidor e tente novamente!", //Mensagemn de erro no cliente para POST
+			"errorSaveServer": "Ocorreu um erro ao gravar o Voto, servidor em manutenção por pouco tempo; tente mais tarde!", //Mensagemn de erro no servidor para POST
+			"errorEditClient": "Ocorreu um erro ao atualizar o Voto, verifique a sua conexão com servidor e tente novamente!", //Mensagemn de erro no cliente para PUT
+			"errorEditServer": "Ocorreu um erro ao atualizar o Voto, servidor em manutenção por pouco tempo; tente mais tarde!", //Mensagemn de erro no servidor para PUT
+			"errorDeleteClient": "Ocorreu um erro ao eliminar o Voto, verifique a sua conexão com servidor e tente novamente!", //Mensagemn de erro no cliente para DELETE
+			"errorDeleteServer": "Ocorreu um erro ao eliminar o Voto, servidor em manutenção por pouco tempo; tente mais tarde!", //Mensagemn de erro no servidor para DELETE
+			"emptyMessage": "Sem Votos disponíveis; verifique a sua conexão ao servidor!", //Mensagem de tabela vazia. TODO: use it!
+			"actionsTitle": "Gerir Votos", //Título acima dos botões de CRUD na tabela genérica
+			"data":{ //Início das labels para os campos deste módulo
+				"codvoto": "Código Voto",
+			}, //Fim das labels para os campos deste módulo
+		}, //Fim da chave que contém as strings associadas ao módulo Votos
+		"Utilizadores": { //Início da chave que contém as strings associadas ao módulo Votos
+			"name": "Utilizadores", //Nome do título da página
+			"mainTabs": ["Utilizadores Tab 1", "Utilizadores Tab 2", "Utilizadores Tab 3"], //Tabs para os diferentes tipos do módulo
+			"modalTabs": ["Campos principais", "Campos auxiliares", "Outros"], //Tabs para os diferentes separadores no fomulário do módulo
+			"modalTabsTitles": ["Campos principais", "Campos auxiliares", "Outros"], //Títulos para o conteúdo de cada tab de formulário
+			"saveButtonHint": "Gravar Utilizador", //Hint do botão guardar
+			"editButtonHint": "Editar Utilizador", //Hint do botão editar
+			"deleteButtonHint": "Eliminar Utilizador", //Hint do botão eliminar
+			"lockButtonHint": "Utilizador já assinada ou em edição", //Hint do botão lock (cadeado de bloqueio sobre registos não editáveis no momento)
+			"lockButtonMessage": "Não poderá alterar dados a serem alterados por outra pessoa ou documentos já assinados!", //Texto de mensagem ao clicar no botão lock
+			"saveButton": "Guardar Utilizador", //Texto do botão guardar
+			"editButton": "Editar Utilizador", //Texto do botão editar
+			"deleteButton": "Eliminar Utilizador", //Texto do botão eliminar
+			"titleSave": "Novo Utilizador", //Título do modal de inserção e do botão para abrir tal modal
+			"titleEdit": "Editar Utilizador", //Título do modal de edição
+			"titleDelete": "Eliminar Utilizador?", //Título do modal de eliminação
+			"messageDelete": "Pretende eliminar a seguinte Utilizador?", //Mensagem de confirmação do modal de eliminação
+			"successSave": "Dados do Utilizador gravados com sucesso!", //Mensagem do POST bem sucedido
+			"successEdit": "Dados do Utilizador atualizados com sucesso!", //Mensagem do PUT bem sucedido
+			"successDelete": "Utilizador eliminada com sucesso!", //Mensagem do DELETE bem sucedido
+			"errorSaveClient": "Ocorreu um erro ao gravar o Utilizador, verifique a sua conexão com servidor e tente novamente!", //Mensagemn de erro no cliente para POST
+			"errorSaveServer": "Ocorreu um erro ao gravar o Utilizador, servidor em manutenção por pouco tempo; tente mais tarde!", //Mensagemn de erro no servidor para POST
+			"errorEditClient": "Ocorreu um erro ao atualizar o Utilizador, verifique a sua conexão com servidor e tente novamente!", //Mensagemn de erro no cliente para PUT
+			"errorEditServer": "Ocorreu um erro ao atualizar o Utilizador, servidor em manutenção por pouco tempo; tente mais tarde!", //Mensagemn de erro no servidor para PUT
+			"errorDeleteClient": "Ocorreu um erro ao eliminar o Utilizador, verifique a sua conexão com servidor e tente novamente!", //Mensagemn de erro no cliente para DELETE
+			"errorDeleteServer": "Ocorreu um erro ao eliminar o Utilizador, servidor em manutenção por pouco tempo; tente mais tarde!", //Mensagemn de erro no servidor para DELETE
+			"emptyMessage": "Sem Utilizadores disponíveis; verifique a sua conexão ao servidor!", //Mensagem de tabela vazia. TODO: use it!
+			"actionsTitle": "Gerir Utilizadores", //Título acima dos botões de CRUD na tabela genérica
+			"data":{ //Início das labels para os campos deste módulo
+				"codutilizador": "Código Utilizador",
+			}, //Fim das labels para os campos deste módulo
+		}, //Fim da chave que contém as strings associadas ao módulo Votos
+	}, //Fim português do Brasil
 	"en-gb": { //Begin Great Britain English strings
 		"General": { //Begin the key containing all generic strings for the whole application
 			"mon": "Monday", //Monday Text

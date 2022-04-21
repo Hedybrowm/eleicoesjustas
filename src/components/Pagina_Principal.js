@@ -7,7 +7,7 @@
  * - Uma instância dinâmica do Template
  */
 import React from 'react';
-import { Chart } from 'chart.js';
+import MaterialTable from 'material-table'
 import ReactModal from 'react-modal';
 import Template from './Template'; //A template of the Layout_Oficial
 const Languages = require('./Idiomas.js'); //Importing the file containing all the strings for each language
@@ -37,7 +37,6 @@ export default class Pagina_Principal extends React.Component{
 	componentDidMount() {
 		//console.log ('User Credentials -> ', this.state.user);
 		//console.log ('User Permissions -> ', this.state.permissionsEleicoes);
-		drawChart(this.state.language); //Passing only the language not to send too many bytes. TODO: take language out of state
 		//The following prvents react-modal of trying to set the app element to document.body, while it doesn't exist yet.
 		ReactModal.setAppElement('body');
 		//window.addEventListener("resize", this.updateDimensions);
@@ -46,12 +45,88 @@ export default class Pagina_Principal extends React.Component{
 	render (){ 
 		return (
 			/* Begin binding*/
-			<div> 
+			<div > 
 				<Template
 					/* Begin Main Content Row*/
 					component={
-						<div>
-							Bem vindo!
+						<div className="main_container">
+							<header className='container-fluid'>
+								{/* Begin Status Bar */}
+								<div className='row stat-bar'>
+									<div className='bar col-lg-4 col-md-12 col-sm-12'>
+										<div className='data_container'>
+											<div className='data title-statistic'>Votos esperados</div>
+											<div className="data statistic">2022</div>
+										</div>
+										<div className='data_container'>
+											<div className='data title-statistic'>Mesas</div>
+											<div className='data statistic'>99999</div>
+										</div>
+										<div className='data_container'>
+											<div className='data title-statistic'>Mesas escrutinadas</div>
+											<div className="data statistic">1000</div>
+										</div>
+									</div>               
+									<div className='bar col-lg-4 col-md-12 col-sm-12 align-self-center'>
+										<h2 className='text-center'>Total de votos</h2>
+										<h3 className='text-center'>99999</h3>
+									</div>
+									<div className='bar col-lg-4 col-md-12 col-sm-12'>
+										<div className='data_container'>
+											<div className='data title-statistic'>Votos brancos</div>
+											<div className='data statistic'>99999</div>
+										</div>
+										<div className='data_container'>
+											<div className='data title-statistic'>Votos nulos</div>
+											<div className='data statistic'>99999</div>
+										</div>
+										<div className='data_container'>
+											<div className='data title-statistic'>Votos reclamados</div>
+											<div className='data statistic'>1000</div>
+										</div>
+									</div>       
+								</div>
+							</header>
+							{/* End Status Bar */}
+
+							<div className='container'>
+								<MaterialTable
+									title="Resultados da votação a nível nacional"
+									columns={[
+										{ title: 'Nº', field: 'numero', type: 'string'},
+										{ title: 'Partido', field: 'partido', type: 'string'},
+										{
+											title: 'Bandeira',
+											field: 'bandeira',
+											render: rowData => (
+												<img
+													style={{ height: 60, borderRadius: '5%' }}
+													src={rowData.avatar}
+												/>
+											),
+										},
+										{ title: 'Candidato', field: 'candidato', type: 'string'},
+										{ title: 'Nº de Votos', field: 'numeroVotos', type: 'numeric'},
+										{ title: 'Percentagem', field: 'percentagem', type: 'numeric'}
+									]}
+									data={query =>
+										new Promise((resolve, reject) => {
+										let url = 'https://reqres.in/api/users?'
+										url += 'per_page=' + query.pageSize
+										url += '&page=' + (query.page + 1)
+										fetch(url)
+											.then(response => response.json())
+											.then(result => {
+											resolve({
+												data: result.data,
+												page: result.page - 1,
+												totalCount: result.total,
+											})
+											})
+										})
+									}
+								/>
+							</div>   
 						</div>
 					}
 					/* End Main Content Row*/
@@ -62,89 +137,3 @@ export default class Pagina_Principal extends React.Component{
 	}
 }
 
-//6292a9bb828f4cfbd5b16ba4a3c1228b6db7f188996a20c2c89998ea49ae6a48311add05e3b89b1f616afdeb7b32dc004cce351bdbd6ec9c6dcda57071e25513
-//This chart will be qui dynamic
-
-function drawChart (language) {
-	var chLine1 = document.getElementById("chLine1");
-	var chLine2 = document.getElementById("chLine2");
-
-	var chartData = {
-		labels: [
-			Languages.languages[language].General.jan,
-			Languages.languages[language].General.feb,
-			Languages.languages[language].General.mar,
-			Languages.languages[language].General.apr,
-			Languages.languages[language].General.may,
-			Languages.languages[language].General.jun,
-			Languages.languages[language].General.jul,
-			Languages.languages[language].General.aug,
-			Languages.languages[language].General.sep,
-			Languages.languages[language].General.oct,
-			Languages.languages[language].General.nov,
-			Languages.languages[language].General.dec,
-		],
-		datasets: [
-			{
-				label: "Vendas Mensais (Euros)",
-				data: [589, 445, 483, 503, 689, 692, 634,66,7,8,9,1],
-				backgroundColor: ['rgba(241, 142, 20, 0.2)'],
-			
-			},
-			{
-				data: [289, 245, 183, 103, 289, 592, 634, 166, 57, 18, 39, 71],
-				backgroundColor: ['rgba(241, 145, 1,0.4)']
-			}
-		]
-	};
-
-	// Bar chart
-
-	new Chart(chLine1, {
-		type: 'bar',
-		data: {
-			labels: [
-				Languages.languages[language].General.jan,
-				Languages.languages[language].General.feb,
-				Languages.languages[language].General.mar,
-				Languages.languages[language].General.apr,
-				Languages.languages[language].General.may,
-				Languages.languages[language].General.jun,
-				Languages.languages[language].General.jul,
-				Languages.languages[language].General.aug,
-				Languages.languages[language].General.sep,
-				Languages.languages[language].General.oct,
-				Languages.languages[language].General.nov,
-				Languages.languages[language].General.dec,
-			],
-			datasets: [
-				{
-					label: Languages.languages[language].General.barChartLabel , 
-					backgroundColor: ['#f18e01','#f18e01','#f18e01','#f18e01','#f18e01','#f18e01','#f18e01','#f18e01','#f18e01','#f18e01','#f18e01','#f18e01'],
-					data: [2478,5267,734,784,433],
-					borderWidth: 0
-				}
-			]
-		},
-		options: {
-			legend: { display: false },
-			title: {
-				display: true,
-				text: Languages.languages[language].General.barChartTitle + '(' + (new Date().getFullYear()) + ')'
-			}
-		}
-	});
-
-	new Chart(chLine2, {
-		type: 'line',
-		data: chartData,
-		options: {
-			legend: { display: false },
-				title: {
-				display: true,
-				text: Languages.languages[language].General.areaChartTitle + '(' + (new Date().getFullYear()) + ')'
-			}
-		
-		}
-	});
-}

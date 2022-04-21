@@ -19,15 +19,16 @@ import Utilitarios from './components/Utilitarios'; //Module for application uti
 import Utilizadores from './components/Utilizadores'; //Module for application users management
 import PDFReader from './components/PDFReader'; //Module for application users management
 import PDFRenderer from './components/PDFRenderer'; //Module for application users management
+import Testes from './components/Testes'; // Test Module
 
-//import Invoice from './components/Invoice'; //Module for application users management
 export default class App extends React.Component{ //Begin Apllication main class (component) where the other all components (modules) are used
 	render (){ //Begin rendering the application
 		return ( //Begin returning the components to be rendered
 			<Router> {/* Begin creating applications routes */}
 				{/*<Switch>  Begin switching so if a router is found twice, it will only be used the first?*/}
 				<Route  exact path="/login" component={Login} /> {/*Login Route*/}				
-				<PrivateRoute exact path="/" component={Pagina_Principal} /> {/*Main Page Route*/}
+				<Route exact path="/" component={Pagina_Principal} /> {/*Main Page Route*/}
+				<Route exact path="/testes" component={Testes} /> {/*Test Page Route*/}
 				<PrivateRoute exact path="/alertas" component={Alertas} /> {/*Warnings Page Route*/}
 				<PrivateRoute exact path="/configuracoes" component={Configuracoes} /> {/*Module for application configuratations*/}
 				<PrivateRoute exact path="/presidentes_candidatos" component={Presidentes_Candidatos} /> {/*Module for application Candidates to Presidency*/}
