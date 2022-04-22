@@ -1,0 +1,102 @@
+.title{
+  margin-bottom: 5%;
+  position: relative;
+  top: 20px;
+  font-family: Barlow;
+  font-size: 50px;
+  font-weight: 800;
+  color: rgb(9, 23, 71);
+  line-height: 1.5;
+}
+
+.paragraph{
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+  color: rgb(9, 23, 71);
+  margin: 0px;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 34px;
+  vertical-align: baseline;
+  box-sizing: inherit;
+}
+
+.formLogin{
+  margin-top: 8%;
+  margin-left: 10%;
+  padding: 5%;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  overflow: visible;
+  width: 332px;
+  box-sizing: border-box;
+  z-index: 2;
+  height: 428px;
+  border-radius: 20px;
+  box-shadow: rgb(170, 170, 170) 2px 4px 16px 2px;
+}
+
+.email, .senha{
+  appearance: none;
+  box-sizing: border-box;
+  z-index: 6;
+  height: 38px;
+  width: 95%;
+  border: 2px solid rgba(20, 202, 222, 0.41);
+  background-color: rgb(255, 255, 255);
+  border-radius: 7px;
+  font-family: Barlow;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(107, 107, 107);
+  padding: 0px 10px;
+  margin: 3%;
+}
+
+.titleRegister{
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+  color: rgb(9, 23, 71);
+  margin-bottom: 30px;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: inherit;
+}
+
+.form-label{
+  margin-left: 7px;
+  font-size: 14px;
+}
+
+.btn_login{
+  outline: 0px dotted transparent;
+  touch-action: manipulation;
+  position: relative;
+  box-sizing: border-box;
+  background-color: #03b4c6;
+  border: none;
+  border-radius: 3%;
+  box-shadow: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: Barlow;
+  font-size: 18px;
+  font-weight: 700;
+  z-index: 8;
+  height: 40px;
+  width: 95%;
+  padding: 0px;
+  margin: 3%;
+  text-align: center;
+  letter-spacing: 2px;
+  line-height: 1;
+  transition: background 200ms ease 0s;
+}
+
+.passRecovery{
+  color: rgb(59, 59, 59);
+}

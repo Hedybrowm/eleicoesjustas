@@ -1,7 +1,7 @@
 //import React, { useState } from 'react';
 import React from 'react';
 import {Link} from 'react-router-dom';
-import './App.css'
+import './Login.css';
 
 export default function Login() {
     const url = '';
@@ -13,10 +13,10 @@ export default function Login() {
         <div className='row'>
             <div className = "col-md-6 col-sm-12 align-self-center">
                 <div className='row text-center m-0.5'>
-                    <h1 clasName = "titulo">Eleições Seguras</h1>
+                    <h1 className = "title">Eleições Seguras</h1>
                 </div>
                 <div className = "row text">
-                    <p className='paragrafo text-center'>
+                    <p className='paragraph text-center'>
                         Contribuir para que as eleições em Angola sejam justas, transparentes e 
                         com um elevado grau de participação, não é só um acto de cidadania e patriotismo, 
                         acima de tudo é amor ao próximo!
