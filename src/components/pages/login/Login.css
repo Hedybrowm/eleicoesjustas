@@ -10,30 +10,16 @@
 }
 
 .paragraph{
-  overflow-wrap: break-word;
-  white-space: pre-wrap;
   color: rgb(9, 23, 71);
-  margin: 0px;
-  padding: 0;
-  border: 0;
-  font: inherit;
   font-size: 34px;
-  vertical-align: baseline;
-  box-sizing: inherit;
+  box-sizing: content-box;
 }
 
 .formLogin{
-  margin-top: 8%;
-  margin-left: 10%;
   padding: 5%;
-  border: 0;
-  font: inherit;
-  vertical-align: baseline;
-  overflow: visible;
-  width: 332px;
+  width: 65%;
   box-sizing: border-box;
-  z-index: 2;
-  height: 428px;
+  height: 425px;
   border-radius: 20px;
   box-shadow: rgb(170, 170, 170) 2px 4px 16px 2px;
 }
@@ -100,3 +86,5 @@
 .passRecovery{
   color: rgb(59, 59, 59);
 }
+
+/* Responsive layout */

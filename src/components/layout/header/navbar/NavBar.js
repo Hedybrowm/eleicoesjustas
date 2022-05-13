@@ -33,7 +33,7 @@ export default function NavBar(){
                 </div>
             </div>
             <div id='div-menu' className='row'>
-                <ul>
+                <ul id='menu'>
                     <li>Votos Nacionais</li>
                     <li>Votos por Províncias</li>
                     <li>Votos contados pelos Partidos</li>

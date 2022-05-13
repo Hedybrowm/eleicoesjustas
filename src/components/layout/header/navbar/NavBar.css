@@ -76,11 +76,11 @@
     height: 40px;
 }
 
-ul{
+#menu{
     list-style-type: none;
 }
 
-li {
+#menu > * {
     display: inline;
     float: left;
     margin: -0.1rem 0.3rem;
@@ -89,7 +89,7 @@ li {
     border-radius: 1px;
 }
 
-li:hover {
+#menu >*:hover {
     background-color: rgb(20, 202, 222);
     margin-top: -3px;
     margin-bottom: 1px;

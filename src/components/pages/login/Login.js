@@ -11,7 +11,7 @@ export default function Login() {
             <div className='col-12 topBar'></div>
         </div>
         <div className='row'>
-            <div className = "col-md-6 col-sm-12 align-self-center">
+            <div className = "col-md-6 col-sm-12 align-self-center responsive">
                 <div className='row text-center m-0.5'>
                     <h1 className = "title">Eleições Seguras</h1>
                 </div>
