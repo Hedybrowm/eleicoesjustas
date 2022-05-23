@@ -45,7 +45,7 @@ const languages = { //Begin Json to map each DB table with values for views. All
 			"clickHere": "Clique aqui!", //Texto para o link que leva a uma hiperligação ou rota específica
 			"notRegistered": "Não tem uma conta? ", //Texto associado ao link para criar nova conta
 			"signUp": "Criar conta", //Link para criar uma nova conta
-			"needHelp": "Precisa de ajuda? Contacte os nossos serviços de ", //Texto associado ao link para ajuda
+			"needHelp": "Precisa de ajuda? Contacte os nossos serviços ", //Texto associado ao link para ajuda
 			"termsOfUse": "Termos de utilização", //Texto para o link de acesso aos termos de utilização
 			"copyright": "Desenvolvido por", //Texto de direitos autorais
 			"contact": "Apoio ao cliente", //Texto de contacto
@@ -153,7 +153,7 @@ const languages = { //Begin Json to map each DB table with values for views. All
 			}, //Fim das labels para os campos deste módulo
 		}, //Fim da chave que contém as strings associadas ao módulo Votos
 	}, //Fim português de Portugal
-	"pt-pt": { //Início português do Brasil
+	"pt-br": { //Início português do Brasil
 		"General": { //Início da chave que contém as strings genéricas para toda aplicação
 			"mon": "Segunda-Feira", //Texto para Segunda-Feira
 			"tue": "Terça-Feira", //Texto para Terça-Feira"
@@ -189,7 +189,7 @@ const languages = { //Begin Json to map each DB table with values for views. All
 			"clickHere": "Clique aqui!", //Texto para o link que leva a uma hiperligação ou rota específica
 			"notRegistered": "Não tem uma conta? ", //Texto associado ao link para criar nova conta
 			"signUp": "Criar conta", //Link para criar uma nova conta
-			"needHelp": "Precisa de ajuda? Contacte os nossos serviços de ", //Texto associado ao link para ajuda
+			"needHelp": "Precisa de ajuda? Contacte os nossos serviços ", //Texto associado ao link para ajuda
 			"termsOfUse": "Termos de utilização", //Texto para o link de acesso aos termos de utilização
 			"copyright": "Desenvolvido por", //Texto de direitos autorais
 			"contact": "Apoio ao cliente", //Texto de contacto
@@ -333,7 +333,7 @@ const languages = { //Begin Json to map each DB table with values for views. All
 			"clickHere": "Click here!", //Click here text to go to be used for a specific link
 			"notRegistered": "Don't have an account? ", //Text associated to a link to create a new account
 			"signUp": "Sign up", //Link to create a new account
-			"needHelp": "Need help? Contact our services of ", //Need help text to go to be used for a specific link
+			"needHelp": "Need help? Contact our services ", //Need help text to go to be used for a specific link
 			"termsOfUse": "Terms of use", //Software terms of use link text
 			"copyright": "Developed by ", //Copyright text
 			"painelPrincipal": "Main Painel", //Text for Menu Main Panel. 

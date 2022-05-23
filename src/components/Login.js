@@ -11,7 +11,7 @@
  */
 
 //TODO: use login form from mapeamentos
-import React from 'react'; 
+import React from 'react';
 //import React, { useCallback } from 'react'; 
 import openSocket from 'socket.io-client';
 import { userService } from './userService';
@@ -198,7 +198,7 @@ export default class Login extends React.Component{
 				<div  className="row">
 					<div  className="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
 						<div className="bannerLoginDiv">
-							<img className="bannerLogin" src="assets/Imagens/Login_1.jpg" alt="Banner Login"/>
+							<img className="bannerLogin" src={process.env.PUBLIC_URL + '/banner.png'} alt="Banner Login" width="99%" height="99%"/>
 						</div>
 					</div>
 					<div  className="divLogin col-xl-6 col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
@@ -226,13 +226,13 @@ export default class Login extends React.Component{
 							<div  className="form_group form-group">
 								<p>{Languages.languages[this.state.language].General.lostData}<Link to="/login" onClick={()=>{this.handleShowModalRecovery()}}>{Languages.languages[this.state.language].General.clickHere}</Link></p> 
 								<p>{Languages.languages[this.state.language].General.notRegistered}<Link to="/login" onClick={()=>{this.handleShowModalSignUp()}}>{Languages.languages[this.state.language].General.signUp}</Link></p> 
-								<p>{Languages.languages[this.state.language].General.needHelp}<a href="https://https://www.rapmarcial.com/">{Languages.languages[this.state.language].General.contact}</a></p> 
+								<p>
+									{Languages.languages[this.state.language].General.needHelp}<a href="https://angola.sytes.net">{Languages.languages[this.state.language].General.contact}</a>
+									{Languages.languages[this.state.language].General.contact} | {Languages.languages[this.state.language].General.termsOfUse} | {Languages.languages[this.state.language].General.copyright} 
+									<img className="logoLogin" src={/*process.env.PUBLIC_URL + */'/logo.png'} alt="Logo" width="5%" height="5%"/>
+								</p> 
 							</div>
 						</form>
-
-						<div className="footer">
-							<label>{Languages.languages[this.state.language].General.contact} | {Languages.languages[this.state.language].General.termsOfUse} | {Languages.languages[this.state.language].General.copyright}   </label> <img className="logoLogin" src="assets/Logo/test.png" alt="Logo"/>
-						</div>
 					</div>
 				</div>
 				<div align = "center">

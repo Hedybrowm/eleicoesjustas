@@ -7,7 +7,9 @@
  * - Template reutilizável em toda aplicação
  */
 import React from 'react'; 
-//import {Link} from "react-router-dom";
+import {Link} from "react-router-dom";
+import { FaBalanceScale } from 'react-icons/fa';
+
 //import { userService } from './userService';
 //import Popup from "reactjs-popup";
 //import ReactModal from 'react-modal';
@@ -16,8 +18,10 @@ import openSocket from 'socket.io-client'; //Importing Websocket Client to acces
 import SelectData from './Select'; //Importing our dynamic select
 import Dropzone from 'react-dropzone'; //The drag an drop component
 const auxiliaryFunctions = require ('./utils'); //Auxiliary functions
+
 var Tables = require ('./Mapeamentos'); //Creating an instance containing all tables with specific data to be used in this dynamic table
-const Languages = require('./Idiomas.js'); //Importing the file containing all the strings for each language
+const Languages = require('./Idiomas.js'); //Importing the file containing all the strings for each languageimport { FaBalanceScale } from 'react-icons/fa';
+
 //const auxiliaryFunctions = require ('./utils'); //Auxiliary functions
 var currentLanguage = (window.navigator.language || window.navigator.userLanguage).toLowerCase(); //The choosen language which should be dynamic. This should be in lower case because some Browsers like chrome use a format like pt-PT, en-GB and others use pt-PT, en-BG, etc. 
 if (!Languages.languages[currentLanguage]){ //Begin evaluating current language
@@ -314,11 +318,42 @@ export default class Template extends React.Component{
 	}
 
 	render (){ 
+		const searchBtn = 'Pesquisar';
+		const placeholder = 'Filtrar...';
+		const login = 'Login';
+
 		return (
 			<div>
-				<p>CABEÇALHO</p>
+				<nav id='nav-bar' className='test'>
+					<div id='header-top' className='container-fluid'>
+						<div className='row'>
+							<div id='logo' className='col-lg-4 col-md-4 col-sm-12 align-self-center text-center nav_items'>
+								<FaBalanceScale id='logo-img'/>
+								<h3 clasName=''>Eleições justas</h3>
+							</div>
+							<div className='col-lg-4 col-md-4 col-sm-12 align-self-center nav_items'>
+								<form>
+									<input type={'search'} placeholder={placeholder} id={'searchInput'}/>
+									{/*<input type={'button'} value={searchBtn} id={'searchBtn'}/>*/}
+								</form>
+							</div>
+							<div id="login" className='col-lg-4 col-md-4 col-sm-12 align-self-center nav_items'>
+								<Link to='/login'>{login}</Link>
+							</div>
+						</div>
+						
+					</div>
+					{/*<div id='div-menu' className='row'>
+						<ul id='menu'>
+							<li>Votos Nacionais</li>
+							<li>Votos por Províncias</li>
+							<li>Votos contados pelos Partidos</li>
+						</ul>
+					</div>*/}
+				</nav>
+
 				<div>{this.props.component}</div>
-				<p>RODAPÉ</p>
+				
 			</div>
 		);
 	}

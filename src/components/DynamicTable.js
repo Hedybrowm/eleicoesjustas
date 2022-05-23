@@ -414,8 +414,10 @@ class DynamicTable extends React.Component { //Begin Component (class) DynamicTa
 		if (this.state.thisPermission === -1) { //Begin case user has not permission for current component
 			//userService.logout(); //Log the user out due to an attempt to get private resource
 			//return (<Redirect to='/login' />); //Redirects user to login 
-			alert (Languages.languages[this.state.language].General.notAllowed);
-			return (<Redirect to='/' />); //Redirects user to index 
+
+			// alert (Languages.languages[this.state.language].General.notAllowed);
+			// return (<Redirect to='/' />); //Redirects user to index 
+			
 			//let location = useLocation();
 			//return (<Redirect to={"/" + location.pathname} />);
 			//alert(location.pathname)

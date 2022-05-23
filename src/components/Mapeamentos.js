@@ -184,28 +184,28 @@ var tables = {  //Begin tables json containing all tables with its rows and fiel
 			}, //End first tab for userRecovery
 		], //End tabs for userRecovery
 	}, //End of table userRecovery
-	/*
-	"relatorios": { //Begin table relatorios
+	"votos": { //Begin table votos
 		"componentID": 2, //The current component's ID to be sent to the server for each request
-		"tabs": [ //Begin form tabs for relatorios
-			{ //Begin first tab for relatorios. 
-				"label": Languages.languages[currentLanguage].Relatorios.modalTabs[0], //First tab label
-				"title": Languages.languages[currentLanguage].Relatorios.modalTabsTitles[0], //First tab label
+		"tabs": [ //Begin form tabs for votos
+			{ //Begin first tab for Votos. 
+				"label": Languages.languages[currentLanguage].Votos.modalTabs[0], //First tab label
+				"title": Languages.languages[currentLanguage].Votos.modalTabsTitles[0], //First tab label
 				"tab": { //Begin first tab json data
 					"rows": [ //Begin rows for first tab
 						{ //Begin first row of the first tab -> main atributes to be be shown on the table of contents, but user can "see more fields" (TODO)
 							"fields": [ //Begin fields for first row of the first tab - each field contains some atributes for its organization, presenbtation and validation
-								{ "css": " ", hideSave: false, disableSave: false, exceptionalHideSave: true, exceptionalDisableSave: true, hideEdit: false, disableEdit: false, exceptionalHideEdit: true, exceptionalDisableEdit: true, "component": "input", "type": "text", "error": Languages.languages[currentLanguage].General.inputError, "placeholder": " ", "regex": /[^0-9\d]/i, "label": Languages.languages[currentLanguage].Relatorios.data.codrelatorio, "field": "codrelatorio" },
-								{ "css": " ", hideSave: false, disableSave: false, exceptionalHideSave: false, exceptionalDisableSave: false, hideEdit: false, disableEdit: false, exceptionalHideEdit: false, exceptionalDisableEdit: false, "component": "input", "type": "text", "error": Languages.languages[currentLanguage].General.inputError, "placeholder": " ", "regex": /[^a-z áàâãéèêíìîóòôõúùûçñäëïöüýÿªº.-\d]/i, "label": Languages.languages[currentLanguage].Relatorios.data.designacao, "field": "designacao" },
-								{ "css": " ", hideSave: false, disableSave: false, exceptionalHideSave: false, exceptionalDisableSave: false, hideEdit: false, disableEdit: false, exceptionalHideEdit: false, exceptionalDisableEdit: false, "component": "input", "type": "text", "error": Languages.languages[currentLanguage].General.inputError, "placeholder": " ", "regex": /[^a-z áàâãéèêíìîóòôõúùûçñäëïöüýÿªº.-\d]/i, "label": Languages.languages[currentLanguage].Relatorios.data.designacaoabreviada, "field": "designacaoabreviada" },
-								{ "css": " ", hideSave: false, disableSave: false, exceptionalHideSave: false, exceptionalDisableSave: false, hideEdit: false, disableEdit: false, exceptionalHideEdit: false, exceptionalDisableEdit: false, "component": "input", "type": "text", "error": Languages.languages[currentLanguage].General.inputError, "placeholder": " ", "regex": /[^a-z áàâãéèêíìîóòôõúùûçñäëïöüýÿªº.-\d]/i, "label": Languages.languages[currentLanguage].Relatorios.data.tipo, "field": "tipo" },
+								{ "css": " ", hideSave: false, disableSave: false, exceptionalHideSave: true, exceptionalDisableSave: true, hideEdit: false, disableEdit: false, exceptionalHideEdit: true, exceptionalDisableEdit: true, "component": "input", "type": "text", "error": Languages.languages[currentLanguage].General.inputError, "placeholder": " ", "regex": /[^0-9\d]/i, "label": Languages.languages[currentLanguage].Votos.data.codvoto, "field": "codvoto" },
+								{ "css": " ", hideSave: false, disableSave: false, exceptionalHideSave: false, exceptionalDisableSave: false, hideEdit: false, disableEdit: false, exceptionalHideEdit: false, exceptionalDisableEdit: false, "component": "input", "type": "text", "error": Languages.languages[currentLanguage].General.inputError, "placeholder": " ", "regex": /[^a-z áàâãéèêíìîóòôõúùûçñäëïöüýÿªº.-\d]/i, "label": Languages.languages[currentLanguage].Votos.data.designacao, "field": "designacao" },
+								{ "css": " ", hideSave: false, disableSave: false, exceptionalHideSave: false, exceptionalDisableSave: false, hideEdit: false, disableEdit: false, exceptionalHideEdit: false, exceptionalDisableEdit: false, "component": "input", "type": "text", "error": Languages.languages[currentLanguage].General.inputError, "placeholder": " ", "regex": /[^a-z áàâãéèêíìîóòôõúùûçñäëïöüýÿªº.-\d]/i, "label": Languages.languages[currentLanguage].Votos.data.designacaoabreviada, "field": "designacaoabreviada" },
+								{ "css": " ", hideSave: false, disableSave: false, exceptionalHideSave: false, exceptionalDisableSave: false, hideEdit: false, disableEdit: false, exceptionalHideEdit: false, exceptionalDisableEdit: false, "component": "input", "type": "text", "error": Languages.languages[currentLanguage].General.inputError, "placeholder": " ", "regex": /[^a-z áàâãéèêíìîóòôõúùûçñäëïöüýÿªº.-\d]/i, "label": Languages.languages[currentLanguage].Votos.data.tipo, "field": "tipo" },
 							] //End fields for first row of the first tab 
 						}, //End first row of the first tab 
 					] //End rows for first tab
 				} //End first tab json data
-			}, //End first tab for relatorios
-		] //End tabs for relatorios
-	}, //End of table relatorios
+			}, //End first tab for votos
+		] //End tabs for votos
+	}, //End of table votos
+	/*
 	"alertas": { //Begin table alertas
 		"componentID": 3, //The current component's ID to be sent to the server for each request
 		"tabs": [ //Begin form tabs for alertas

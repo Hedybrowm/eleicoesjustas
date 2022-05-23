@@ -3,7 +3,9 @@ import React from 'react'; //React main module
 import { BrowserRouter as Router, Route } from "react-router-dom"; //Router to create all routes to our application using Route
 import { PrivateRoute } from './components/PrivateRoute'; //Module to prevent users to enter on protected pages without credentials
 import Login from './components/Login'; //Application login module
+import Menu from './components/Menu'; //Main page module
 import Pagina_Principal from './components/Pagina_Principal'; //Main page module
+import Comparar_Votos from './components/Comparar_Votos'; //Main page module
 import Alertas from './components/Alertas'; //Module for application Alerts
 import Configuracoes from './components/Configuracoes'; //Module for application configuratations
 import Presidentes_Candidatos from './components/Presidentes_Candidatos'; //Module for application Candidates to Presidency
@@ -20,6 +22,7 @@ import Utilizadores from './components/Utilizadores'; //Module for application u
 import PDFReader from './components/PDFReader'; //Module for application users management
 import PDFRenderer from './components/PDFRenderer'; //Module for application users management
 import Testes from './components/Testes'; // Test Module
+import Admin from './components/Admin'; // Administrator Module
 
 export default class App extends React.Component{ //Begin Apllication main class (component) where the other all components (modules) are used
 	render (){ //Begin rendering the application
@@ -27,7 +30,10 @@ export default class App extends React.Component{ //Begin Apllication main class
 			<Router> {/* Begin creating applications routes */}
 				{/*<Switch>  Begin switching so if a router is found twice, it will only be used the first?*/}
 				<Route  exact path="/login" component={Login} /> {/*Login Route*/}				
-				<Route exact path="/" component={Pagina_Principal} /> {/*Main Page Route*/}
+				<Route exact path="/" component={Menu} /> {/*Menu Route*/}
+				<Route exact path="/principal" component={Pagina_Principal} /> {/*Main Page Route*/}
+				<Route exact path="/comparar" component={Comparar_Votos} /> {/*Votes comparison Page Route*/}
+				<Route exact path="/admin" component={Admin} /> {/*Votes comparison Page Route*/}
 				<Route exact path="/testes" component={Testes} /> {/*Test Page Route*/}
 				<PrivateRoute exact path="/alertas" component={Alertas} /> {/*Warnings Page Route*/}
 				<PrivateRoute exact path="/configuracoes" component={Configuracoes} /> {/*Module for application configuratations*/}
@@ -38,7 +44,7 @@ export default class App extends React.Component{ //Begin Apllication main class
 				<PrivateRoute exact path="/assembleias" component={Assembleias} /> {/*Module for application Polling Station*/}
 				<PrivateRoute exact path="/mesas_Eleitorais" component={Mesas_Eleitorais} /> {/*Module for application Polling station table*/}
 				<PrivateRoute exact path="/delegados" component={Delegados} /> {/*Module for application delegate*/}
-				<PrivateRoute exact path="/documentos" component={Documentos} /> {/*Module for application documents*/}
+				<Route exact path="/documentos" component={Documentos} /> {/*Module for application documents*/}
 				<PrivateRoute exact path="/relatorios" component={Relatorios} /> {/*Module for application reports*/}
 				<PrivateRoute exact path="/utilitarios" component={Utilitarios} /> {/*Module for application utilities*/}
 				<PrivateRoute exact path="/utilizadores" component={Utilizadores} /> {/*Module for application users management*/}
