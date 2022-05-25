@@ -1,9 +1,9 @@
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
-import Login from './components/pages/login/Login'
-import StatBar from './components/layout/header/navbar/NavBar'
-import Register from './components/pages/register/Register'
-import Administrar from './components/pages/administrar'
-//import PaginaInicial from './components/pages/PaginaInicial'
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+//import PaginaInicial from './components/pages/PaginaInicial';
+import StatBar from './components/layout/header/navbar/NavBar';
+import Register from './components/pages/register/Register';
+import Administrar from './components/pages/administrar';
+import Login from './components/pages/login/Login';
 
 export default function App() {
   return (
@@ -11,7 +11,7 @@ export default function App() {
       <Route exact path = "/">
           <Login />
       </Route>
-      <Route path = "/a">
+      <Route path = "/adm">
           <Administrar />
       </Route>
       <Switch>
