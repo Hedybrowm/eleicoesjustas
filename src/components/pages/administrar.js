@@ -14,12 +14,12 @@ export default function Administrador(){
                 
             </div>
             <div className='row container'>
-                <div className='col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3 sideNav bandeira'>
-                    <div className='row align-self-center'>
+                <div className='col-12 col-sm-1 col-md-3 col-lg-3 col-xl-3 col-xxl-3 sideNav bandeira'>
+                    <div className='header-navBar row align-self-center'>
                         <img src='' alt='logotipo' />
                         <p>Administrar</p>
                     </div>
-                    <nav className='row'>
+                    <nav className='row showNavBar'>
                         <ul className='nav flex-column'>
                             <li className='nav-item'>Partidos</li>
                             <li className='nav-item'>Presidentes</li>
@@ -35,7 +35,7 @@ export default function Administrador(){
                     </div>
                 </div>
                  {/* Formulário de registos */}
-                <div className='col-12 col-sm-12 col-md-9 col-lg-9 col-xl-8 col-xxl-9'>
+                <div className='col-12 col-sm-11 col-md-9 col-lg-9 col-xl-8 col-xxl-9'>
                     <form className = "boxAdmFormRegister">
                         <div className='row'>
                             <div className='col-7'>

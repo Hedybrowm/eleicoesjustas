@@ -159,11 +159,18 @@
   
 
   /* Responsive design */
-@media(min-width: 768px ) {
-
-  .table, .sideNav{
+@media only screen and (max-width: 767px) {
+  .sideNav {
+    display: none;
+  }
+  
+  .table, .sideNav, .boxAdmFormRegister{
     text-align: center;
-    font-size: 16px;
+    font-size: 10px;
+  }
+
+  .formLabel {
+    font-size: 9px;
   }
 
   .table {
@@ -174,4 +181,32 @@
     padding: 5%;
   }
 
+  .nav-item, #bandeira, .header-navBar > p {
+    visibility: hidden;
+  }
+
+  .select-president-name, .nomePartido, .numberID {
+    height: 24px;
+  }
+  .inputFile {
+    height: 80px;
+  }
+  ::placeholder, select > option {
+    font-size: 10px;
+  }
+
+  input[type='button'] {
+    width: 50%;
+    font-size: 12px;
+  }
+
+}
+
+@media only screen and (max-width: 407px) {
+  .sideNav {
+    display: none;
+  }
+  .container {
+    width: 100%;
+  }
 }
